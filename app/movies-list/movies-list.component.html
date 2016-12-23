@@ -1,5 +1,7 @@
-<h1>Tour of Heroes ({{mode}})</h1>
-<h3>Heroes:</h3>
-<ul>
-  <li *ngFor="let movie of movies">{{movie.Title}}</li>
-</ul>
+<table>
+    <tbody>
+       <mvdb-movie-short *ngFor="let movie of movies" [movie]="movie">
+         
+       </mvdb-movie-short>
+     </tbody>
+</table>    

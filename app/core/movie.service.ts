@@ -6,10 +6,7 @@ import { Observable }     from 'rxjs/Observable';
 @Injectable()
 export class MovieService {
   private heroesUrl = '../data/movies.json';
-  constructor (private http: Http) {
-    console.log('Im here');
-  }
-
+  constructor (private http: Http) {}
   getMovies (): Observable<Movie[]> {
     return this.http.get(this.heroesUrl)
                     .map(this.extractData)
