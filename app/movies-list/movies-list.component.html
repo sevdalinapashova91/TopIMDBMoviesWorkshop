@@ -1,4 +1,22 @@
-
+<h1>Top 10 iMDB Movies</h1>
+<input type="text"/>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Title
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Title</a></li>
+    <li><a href="#">Rating</a></li>
+    <li><a href="#">Year</a></li>
+  </ul>
+</div>
+<div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Desc
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a href="#">Desc</a></li>
+    <li><a href="#">Asc</a></li>
+  </ul>
+</div>
 <table>
     <tbody>
        <tr mvdb-movie-short *ngFor="let movie of movies" [movie]="movie">         
