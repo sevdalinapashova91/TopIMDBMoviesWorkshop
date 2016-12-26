@@ -11,6 +11,8 @@ export class MovieListComponent implements OnInit  {
     movies : Movie[];
     mode = 'Observable';
     errorMessage: string;
+    sortAttribute = 'Title';
+    sortOrder = 'Desc';
     constructor (private movieService: MovieService) {}
     ngOnInit() { this.getMovies(); }
     getMovies(){
